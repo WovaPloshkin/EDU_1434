@@ -9,8 +9,17 @@ TF = (9 / 5) * TC + 32
 Пример вывода:
 105.8 */
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-       // У меня 32 разрядная ОС Win 10. Я установил Java 8. не могу найти библиотеку Java.base
+
+    System.out.print("Введите градусы:");
+        Scanner scan = new Scanner(System.in);
+        double temp = scan.nextInt();
+        System.out.println((9/5)*temp+32);
+
     }
 }
+
+
