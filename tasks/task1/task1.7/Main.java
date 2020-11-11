@@ -9,8 +9,20 @@
 
 
 
+import java.util.Scanner;
+
+
 public class Main {
     public static void main(String[] args) {
         //Ваш код
-    }
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Ширина:");
+            double width= scan.nextInt();
+        System.out.print("Длина:");
+        double length = scan.nextInt();
+        System.out.print("Высота:");
+        double height = scan.nextInt();
+        double volume = width*length*height;
+        System.out.println("Объем: "+volume);
+            }
 }
