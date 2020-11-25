@@ -31,9 +31,9 @@ class ProxyChecker {
                 String ip = ipString.split(":")[0];
                 int port = Integer.parseInt(ipString.split(":")[1]);
                 Thread t1 = new Thread(new MyRunnableClass(ip,port));
-                // Thread t2 = new Thread(new MultiThread.MyRunnableClass(ip,port));
+                Thread t2 = new Thread(new MultiThread.MyRunnableClass(ip,port));
                 t1.start();
-                //t2.start();
+                t2.start();
             }
         } catch (IOException e) {
             e.printStackTrace();
