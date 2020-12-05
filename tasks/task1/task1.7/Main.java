@@ -23,6 +23,6 @@ public class Main {
         System.out.print("Высота:");
         double height = scan.nextInt();
         double volume = width*length*height;
-        System.out.println("Объем: "+volume);
+        System.out.println("Объем: "+(volume*100));
             }
 }
